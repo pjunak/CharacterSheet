@@ -1,0 +1,6 @@
+# Kaz Brekker character sheet config TOML
+
+char_name = { first = "Kaz", last = "Brekker", title = ""}
+    
+
+

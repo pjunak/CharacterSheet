@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <toml++/toml.h>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -14,8 +16,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+    void setupCharacter();
+    toml::table openTOML(toml::table tbl);
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H

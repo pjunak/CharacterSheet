@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/img/default_portrait.png</file>
+        <file>resources/img/ico.png</file>
+        <file>resources/fonts/Vecna.ttf</file>
+        <file>resources/fonts/VecnaBold.ttf</file>
+        <file>resources/fonts/VecnaBoldItalic.ttf</file>
+        <file>resources/fonts/VecnaItalic.ttf</file>
+        <file>resources/img/background.jpg</file>
+    </qresource>
+</RCC>

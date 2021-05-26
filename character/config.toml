@@ -1,0 +1,5 @@
+# Kaz Brekker character sheet config TOML
+
+char_name = {title_before = "", first = "Kaz", middle = "", last = "Brekker", title_after = ""}
+classes = {sorcerer = "7", bard = "3"}
+attributes = {STR = "8", DEX = "14", CON = "12", INT = "14", WIS = "12", CHA = "18"}
