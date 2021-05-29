@@ -21,15 +21,12 @@
  * @details After constructing MainWindow calls functions for setting up chracter from user files
  * @param parent
  */
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->SetupDesign();
 
-    this->setStyleSheet("MainWindow {background-image:url(:/resources/resources/img/background2.jpg);}"); //Sets background for MainWindow
     this->setupChar(); //Sets up character info from data stored in config.toml
-
 }
 
 /**
@@ -40,20 +37,37 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-/**
- * @brief MainWindow::closeEvent Shows prompt for user when program is closed
- * @param event Catches program closing event
- */
-void MainWindow::closeEvent(QCloseEvent *event)  // show prompt when user wants to close app
+void MainWindow::SetupDesign()
 {
-    event->ignore();
-    if (QMessageBox::Yes == QMessageBox::question(this, "Close Confirmation", "Exit?", QMessageBox::Yes | QMessageBox::No))
-    {
-        event->accept();
-    }
+    // sets background
+    this->setStyleSheet("MainWindow {background-image:url(:/resources/img/background.jpg);}"); //Sets background for MainWindow
+    // Sets design frames for portrait, stats, proficiencies, abilities
+    // Portrait
+    QPixmap overlay(":/resources/img/portrait_frame.png");
+    ui->Portrait_overlay->setPixmap(overlay);
+    // Stats
+    ui->Strength->setObjectName("named"); // Needs to be named to prevent style inheriting
+    ui->Dexterity->setObjectName("named");
+    ui->Constitution->setObjectName("named");
+    ui->Inteligence->setObjectName("named");
+    ui->Wisdom->setObjectName("named");
+    ui->Charisma->setObjectName("named");
+    ui->Strength->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    ui->Dexterity->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    ui->Constitution->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    ui->Inteligence->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    ui->Wisdom->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    ui->Charisma->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
+    // profciencies
+    ui->Proficiencies->setObjectName("named");
+    ui->Proficiencies->setStyleSheet("QFrame#named{border-image: url(:/resources/img/proficiency_frame.png) 0 0 0 0 stretch stretch;}");
+
+
 
 }
+
+
+
 
 /**
  * @brief getQStrVal Returns value from TOML node converted to QString
@@ -75,6 +89,21 @@ int getIntVal(toml::v2::node_view<toml::v2::node> node)
     return node.value<int>().value_or(0);
 }
 
+std::vector<QString> getVectorVal(toml::v2::node_view<toml::v2::node> node)
+{
+    std::vector<QString> vector;
+    if ( toml::array* item = node.as_array())
+    {
+        for (toml::node& item : *item)
+        {
+            vector.push_back(QString::fromStdString(item.value_or("")));
+        }
+    }
+    else{
+        vector.push_back(QString::fromStdString("Error loading from file"));
+    }
+    return vector;
+}
 
 toml::table MainWindow::openTOML(toml::table tbl)
 {
@@ -103,22 +132,22 @@ void MainWindow::updateChar()
     // Concatenates full name from its parts and displays it
     QString fullName;
     fullName += Ch.Name.title_before;
-    if (fullName.length() > 0)
-    {
-            fullName += " ";
-    }
-    fullName += Ch.Name.first;
     if (fullName.length() > 0 && Ch.Name.first.length() > 0)
     {
             fullName += " ";
     }
-    fullName += Ch.Name.middle;
+    fullName += Ch.Name.first;
     if (fullName.length() > 0 && Ch.Name.middle.length() > 0)
     {
             fullName += " ";
     }
-    fullName += Ch.Name.last;
+    fullName += Ch.Name.middle;
     if (fullName.length() > 0 && Ch.Name.last.length() > 0)
+    {
+            fullName += " ";
+    }
+    fullName += Ch.Name.last;
+    if (fullName.length() > 0 && Ch.Name.title_after.length() > 0)
     {
             fullName += " ";
     }
@@ -204,6 +233,49 @@ void MainWindow::updateChar()
     {
         ui->CHA_mod->setStyleSheet("color:black");
     }
+
+    // Sets all proficiencies
+    ui->Armor_prof->setText("");
+    ui->Armor_prof->setWordWrap(true);
+    ui->Weapons_prof->setText("");
+    ui->Weapons_prof->setWordWrap(true);
+    ui->Tools_prof->setText("");
+    ui->Tools_prof->setWordWrap(true);
+    ui->Languages_prof->setText("");
+    ui->Languages_prof->setWordWrap(true);
+    for (auto &&item : Ch.Prof.armor)
+    {
+        ui->Armor_prof->setText(ui->Armor_prof->text() + item);
+        if (item != Ch.Prof.armor.back())
+        {
+            ui->Armor_prof->setText(ui->Armor_prof->text() + ", ");
+        }
+    }
+    for (auto &&item : Ch.Prof.weapons)
+    {
+        ui->Weapons_prof->setText(ui->Weapons_prof->text() + item);
+        if (item != Ch.Prof.weapons.back())
+        {
+            ui->Weapons_prof->setText(ui->Weapons_prof->text() + ", ");
+        }
+    }
+    for (auto &&item : Ch.Prof.tools)
+    {
+        ui->Tools_prof->setText(ui->Tools_prof->text() + item);
+        if (item != Ch.Prof.tools.back())
+        {
+            ui->Tools_prof->setText(ui->Tools_prof->text() + ", ");
+        }
+    }
+    for (auto &&item : Ch.Prof.languages)
+    {
+        ui->Languages_prof->setText(ui->Languages_prof->text() + item);
+        if (item != Ch.Prof.languages.back())
+        {
+            ui->Languages_prof->setText(ui->Languages_prof->text() + ", ");
+        }
+    }
+
 }
 
 /**
@@ -215,7 +287,7 @@ void MainWindow::setupChar()
     // Loads and displays portrait
     QPixmap portrait("../CharacterSheet/character/portrait.jpg");
     ui->Portrait->setPixmap(portrait);
-    ui->Portrait->setStyleSheet("border: 2px solid black;");
+
 
     // Opens character save file
     toml::table character;
@@ -234,7 +306,24 @@ void MainWindow::setupChar()
     Ch.Att.WIS = getIntVal(character["attribute"]["WIS"]);
     Ch.Att.CHA = getIntVal(character["attribute"]["CHA"]);
 
+    Ch.Prof.armor = getVectorVal(character["proficiency"]["armor"]);
+    Ch.Prof.weapons = getVectorVal(character["proficiency"]["weapons"]);
+    Ch.Prof.tools = getVectorVal(character["proficiency"]["tools"]);
+    Ch.Prof.languages = getVectorVal(character["proficiency"]["languages"]);
+
     updateChar();
 }
 
+/**
+ * @brief MainWindow::closeEvent Shows prompt for user when program is closed
+ * @param event Catches program closing event
+ */
+void MainWindow::closeEvent(QCloseEvent *event)  // show prompt when user wants to close app
+{
+    event->ignore();
+    if (QMessageBox::Yes == QMessageBox::question(this, "Close Confirmation", "Exit?", QMessageBox::Yes | QMessageBox::No))
+    {
+        event->accept();
+    }
 
+}

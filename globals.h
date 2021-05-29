@@ -4,6 +4,7 @@
 #endif // GLOBALS_H
 
 #include <QString>
+#include <vector>
 
 // Global error code
 int errorCode = 0;
@@ -43,6 +44,13 @@ struct character_attributes{
     int WIS = 10;
     int CHA = 10;
 };
+//Character proficiencies
+struct character_proficiencies{
+    std::vector<QString> weapons;
+    std::vector<QString> armor;
+    std::vector<QString> tools;
+    std::vector<QString> languages;
+};
 // Chaaracter skill proficiencies
 struct character_skill_proficiencies{
     int acrobatics = 0;
@@ -71,5 +79,6 @@ struct character_data{
     character_name Name;
     character_classes Class;
     character_attributes Att;
+    character_proficiencies Prof;
     character_skill_proficiencies Skill;
 } Ch;

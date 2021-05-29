@@ -1,12 +1,14 @@
 <RCC>
     <qresource prefix="/resources">
-        <file>resources/img/default_portrait.png</file>
-        <file>resources/img/ico.png</file>
-        <file>resources/fonts/Vecna.ttf</file>
-        <file>resources/fonts/VecnaBold.ttf</file>
-        <file>resources/fonts/VecnaBoldItalic.ttf</file>
-        <file>resources/fonts/VecnaItalic.ttf</file>
-        <file>resources/img/background.jpg</file>
-        <file>resources/img/background2.jpg</file>
+        <file>img/background.jpg</file>
+        <file>img/ico.ico</file>
+        <file>img/portrait_frame.png</file>
+        <file>img/stat_frame.png</file>
+        <file>fonts/Vecna.ttf</file>
+        <file>fonts/VecnaBold.ttf</file>
+        <file>fonts/VecnaBoldItalic.ttf</file>
+        <file>fonts/VecnaItalic.ttf</file>
+        <file>img/proficiency_frame.png</file>
+        <file>img/default_portrait.png</file>
     </qresource>
 </RCC>

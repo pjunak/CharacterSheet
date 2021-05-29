@@ -17,6 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void closeEvent(QCloseEvent *event);
+    void SetupDesign();
     void updateChar();
     void setupChar();
     toml::table openTOML(toml::table tbl);

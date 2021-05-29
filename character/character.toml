@@ -8,3 +8,5 @@ attribute = {STR = 8, DEX = 14, CON = 12, INT = 14, WIS = 12, CHA = 18}
 
 # 0 = no proficiency, 1 = half proficiency, 2 = proficiency, 3 = expertise
 skill_proficiency = {acrobatics = 1, animal_handling = 1, arcana = 1, athletics = 1, deception = 3, history = 1, insight = 3, intimidation = 2, investigation = 2, medicine = 1, nature = 1, perception = 1, performance = 2, persuasion = 1, religion = 1, sleight_of_hand = 2, stealth = 1, survival = 1}
+
+proficiency = {armor = ["Light Armor", "Medium Armor", "Shields"], weapons = ["Crossbow", "Light", "Dagger", "Dart", "Quarterstaff", "Sling"], tools = ["Disguise Kit", "Dulcimer"], languages = ["Common", "Dwarvish"]}
