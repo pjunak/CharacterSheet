@@ -7,5 +7,6 @@
         <file>resources/fonts/VecnaBoldItalic.ttf</file>
         <file>resources/fonts/VecnaItalic.ttf</file>
         <file>resources/img/background.jpg</file>
+        <file>resources/img/background2.jpg</file>
     </qresource>
 </RCC>

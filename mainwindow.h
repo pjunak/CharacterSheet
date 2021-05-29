@@ -16,7 +16,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void setupCharacter();
+    void closeEvent(QCloseEvent *event);
+    void updateChar();
+    void setupChar();
     toml::table openTOML(toml::table tbl);
 private:
     Ui::MainWindow *ui;
