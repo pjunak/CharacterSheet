@@ -58,11 +58,32 @@ void MainWindow::SetupDesign()
     ui->Inteligence->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
     ui->Wisdom->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
     ui->Charisma->setStyleSheet("QFrame#named{border-image: url(:/resources/img/stat_frame.png) 0 0 0 0 stretch stretch;}");
-    // profciencies
+
+    //obsolete
+    ui->Proficiencies_3->setObjectName("named");
+    ui->Proficiencies_3->setStyleSheet("QFrame#named{border-image: url(:/resources/img/proficiency_frame.png) 0 0 0 0 stretch stretch;}");
+
+    // Profciencies
     ui->Proficiencies->setObjectName("named");
-    ui->Proficiencies->setStyleSheet("QFrame#named{border-image: url(:/resources/img/proficiency_frame.png) 0 0 0 0 stretch stretch;}");
-
-
+    ui->Proficiencies->setStyleSheet("QTabWidget#named{ background-color: transparent;}");
+    // Proficiency tabs
+    ui->Armor_tab->setObjectName("named");
+    ui->Weapons_tab->setObjectName("named");
+    ui->Tools_tab->setObjectName("named");
+    ui->Languages_tab->setObjectName("named");
+    ui->Armor_tab->setStyleSheet("QWidget#named{ background-color: transparent;}");
+    ui->Weapons_tab->setStyleSheet("QWidget#named{ background-color: transparent;}");
+    ui->Tools_tab->setStyleSheet("QWidget#named{ background-color: transparent;}");
+    ui->Languages_tab->setStyleSheet("QWidget#named{ background-color: transparent;}");
+    // Proficiency frames
+    ui->Armor_Frame->setObjectName("named");
+    ui->Weapons_frame->setObjectName("named");
+    ui->Tools_frame->setObjectName("named");
+    ui->Languages_frame->setObjectName("named");
+    ui->Armor_Frame->setStyleSheet("QFrame#named{border-image: url(:/resources/img/frame_pointy_wide.png) 0 0 0 0 stretch stretch;}");
+    ui->Weapons_frame->setStyleSheet("QFrame#named{border-image: url(:/resources/img/frame_pointy_wide.png) 0 0 0 0 stretch stretch;}");
+    ui->Tools_frame->setStyleSheet("QFrame#named{border-image: url(:/resources/img/frame_pointy_wide.png) 0 0 0 0 stretch stretch;}");
+    ui->Languages_frame->setStyleSheet("QFrame#named{border-image: url(:/resources/img/frame_pointy_wide.png) 0 0 0 0 stretch stretch;}");
 
 }
 

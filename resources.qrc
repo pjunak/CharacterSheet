@@ -10,5 +10,6 @@
         <file>fonts/VecnaItalic.ttf</file>
         <file>img/proficiency_frame.png</file>
         <file>img/default_portrait.png</file>
+        <file>img/frame_pointy_wide.png</file>
     </qresource>
 </RCC>

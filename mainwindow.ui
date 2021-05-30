@@ -101,7 +101,7 @@
       <x>240</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -113,19 +113,13 @@
     <widget class="QLabel" name="STR">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -143,25 +137,19 @@
       <string>STR:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="STR_val">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -185,22 +173,16 @@
     <widget class="QLabel" name="STR_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
-       <height>50</height>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="minimumSize">
       <size>
        <width>50</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
+       <height>40</height>
       </size>
      </property>
      <property name="font">
@@ -225,7 +207,7 @@
       <x>350</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -237,19 +219,13 @@
     <widget class="QLabel" name="DEX_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
        <height>50</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>50</height>
@@ -274,18 +250,12 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -309,19 +279,13 @@
     <widget class="QLabel" name="DEX">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -340,7 +304,7 @@
       <string>DEX:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -350,7 +314,7 @@
       <x>460</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -362,19 +326,13 @@
     <widget class="QLabel" name="CON_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
        <height>50</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>50</height>
@@ -398,19 +356,13 @@
     <widget class="QLabel" name="CON">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -431,25 +383,19 @@
       <string>CON:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="CON_val">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -477,7 +423,7 @@
       <x>790</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -489,19 +435,13 @@
     <widget class="QLabel" name="CHA_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
        <height>50</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>50</height>
@@ -525,19 +465,13 @@
     <widget class="QLabel" name="CHA">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -555,25 +489,19 @@
       <string>CHA:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="CHA_val">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -601,7 +529,7 @@
       <x>680</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -613,19 +541,13 @@
     <widget class="QLabel" name="WIS_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
        <height>50</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>50</height>
@@ -649,19 +571,13 @@
     <widget class="QLabel" name="WIS">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -679,25 +595,19 @@
       <string>WIS:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="WIS_val">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -725,7 +635,7 @@
       <x>570</x>
       <y>60</y>
       <width>101</width>
-      <height>90</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -737,19 +647,13 @@
     <widget class="QLabel" name="INT_mod">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>60</width>
+       <x>0</x>
+       <y>30</y>
+       <width>101</width>
        <height>50</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>50</height>
@@ -774,18 +678,12 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>10</y>
+       <y>0</y>
        <width>30</width>
-       <height>30</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>30</width>
        <height>30</height>
@@ -809,19 +707,13 @@
     <widget class="QLabel" name="INT">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>60</width>
-       <height>30</height>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="minimumSize">
-      <size>
-       <width>60</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="maximumSize">
       <size>
        <width>60</width>
        <height>30</height>
@@ -839,7 +731,7 @@
       <string>INT:</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -862,11 +754,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QFrame" name="Proficiencies">
+   <widget class="QFrame" name="Proficiencies_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>390</y>
+      <x>1250</x>
+      <y>220</y>
       <width>221</width>
       <height>331</height>
      </rect>
@@ -921,24 +813,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="Armor_prof">
-        <property name="font">
-         <font>
-          <family>Vecna</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QLabel" name="Weapon_label">
         <property name="font">
          <font>
@@ -950,24 +824,6 @@
         </property>
         <property name="text">
          <string>   WEAPONS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="Weapons_prof">
-        <property name="font">
-         <font>
-          <family>Vecna</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
       </item>
@@ -987,24 +843,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="Tools_prof">
-        <property name="font">
-         <font>
-          <family>Vecna</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QLabel" name="Languages_label">
         <property name="font">
          <font>
@@ -1019,25 +857,302 @@
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QLabel" name="Languages_prof">
-        <property name="font">
-         <font>
-          <family>Vecna</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
      </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+   <widget class="QTabWidget" name="Proficiencies">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>301</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vecna</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>true</bool>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="Armor_tab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Armor</string>
+     </attribute>
+     <widget class="QFrame" name="Armor_Frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Vecna</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="Armor_prof">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Vecna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Weapons_tab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Weapons</string>
+     </attribute>
+     <widget class="QFrame" name="Weapons_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Vecna</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="Weapons_prof">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Vecna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Tools_tab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Tools</string>
+     </attribute>
+     <widget class="QFrame" name="Tools_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Vecna</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="Tools_prof">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Vecna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Languages_tab">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Languages</string>
+     </attribute>
+     <widget class="QFrame" name="Languages_frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Vecna</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="Languages_prof">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Vecna</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </widget>
   </widget>
